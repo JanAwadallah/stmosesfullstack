@@ -11,7 +11,8 @@ const ServiceCard = ({ title, img, desc, link, onClick }) => {
         src={img}
         style={{
           width: "100%",
-          height: "50%",
+          height: "auto",
+          maxHeight: "250px",
           objectFit: "cover",
           padding: "5px",
         }}
