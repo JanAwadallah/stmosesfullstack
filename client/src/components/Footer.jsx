@@ -26,7 +26,7 @@ const Footer = () => {
     <div className="footer-container">
       <div className="left">
         <img
-          style={{ width: "50%", height: "50%" }}
+          style={{ width: "100%", height: "auto", maxWidth: "150px" }}
           src="./images/StMoses3.png"
           alt="logo"
         />
