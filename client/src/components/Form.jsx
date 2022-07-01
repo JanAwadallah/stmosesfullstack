@@ -61,7 +61,7 @@ const Form = () => {
 
     emailjs
       .send(
-        process.env.REACT_APP_SERVEICE_ID,
+        "service_9818zou",
         process.env.REACT_APP_TEMPLATE_ID,
         values,
         "9QW4uDWlXZHsWmY2s"
