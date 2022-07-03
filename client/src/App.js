@@ -29,7 +29,6 @@ function App() {
           <Route path="/liturgy-booking" element={<Booking />} />
           <Route path="/child-safety" element={<ChildSafety />} />
           <Route path="/donate" element={<Donate />} />
-          <Route path="/*" element={<NotFound />} />
         </Routes>
         <ToastContainer />
         <hr />

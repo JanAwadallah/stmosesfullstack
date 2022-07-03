@@ -60,12 +60,7 @@ const Form = () => {
     e.preventDefault();
 
     emailjs
-      .send(
-        "service_9818zou",
-        process.env.REACT_APP_TEMPLATE_ID,
-        values,
-        "9QW4uDWlXZHsWmY2s"
-      )
+      .send("service_9818zou", "template_sb3hrip", values, "9QW4uDWlXZHsWmY2s")
       .then(
         (result) => {
           if (result.status === 200) {

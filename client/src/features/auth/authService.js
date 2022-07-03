@@ -1,7 +1,10 @@
 import axios from "axios";
 
 const register = async (user) => {
-  const res = await axios.post("/api/users", user);
+  const res = await axios.post(
+    "https://stmosescopts.herokuapp.com/api/users",
+    user
+  );
   if (res.data) {
     localStorage.setItem("user", JSON.stringify(res.data));
   }
@@ -9,7 +12,10 @@ const register = async (user) => {
 };
 
 const login = async (userData) => {
-  const res = await axios.post("/api/users/login", userData);
+  const res = await axios.post(
+    "https://stmosescopts.herokuapp.com/api/users/login",
+    userData
+  );
   if (res.data) {
     console.log(res.data);
     localStorage.setItem("user", JSON.stringify(res.data));

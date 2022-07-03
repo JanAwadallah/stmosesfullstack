@@ -50,7 +50,10 @@ const Booking = () => {
     e.preventDefault();
 
     try {
-      const res = await axios.post("http://localhost:5000/api/liturgy", values);
+      const res = await axios.post(
+        "https://stmosescopts.herokuapp.com/api/liturgy",
+        values
+      );
       if (res.status === 201) {
         toast.success("Thanks for booking, see you soon");
         setTimeout(() => {
