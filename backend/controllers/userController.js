@@ -62,6 +62,7 @@ const userLogin = asyncHandler(async (req, res) => {
   const user = await User.findOne({ email });
 
   if (user && (await bcrypt.compare(password, user.password))) {
+    res.header("Access-Control-Allow-Origin", "*");
     res.status(200).json({
       _id: user._id,
       firstName: user.firstName,
