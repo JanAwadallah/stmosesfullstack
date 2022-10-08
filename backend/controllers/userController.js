@@ -40,6 +40,7 @@ const registerUser = asyncHandler(async (req, res) => {
     password: hashedPassword,
   });
   if (user) {
+    res.header("Access-Control-Allow-Origin", "*");
     res.status(201).json({
       _id: user._id,
       firstName: user.firstName,
